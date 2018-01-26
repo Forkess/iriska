@@ -1,0 +1,335 @@
+body {
+    background-image: url('../img/bg_body.png');
+}
+
+.page__header_bg {
+    background-image: url('../img/bg_header.png');
+}
+
+.page__header {
+    margin: auto;
+    max-width: 900px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.header__text {
+    font-family: 'Bebas Neue Regular';
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.header__text_title {
+    font-size: 24px;
+}
+
+.header__phone {
+    border: #000000 1px dashed;
+    border-radius: 10px;
+    font-family: 'Bebas Neue Regular';
+    font-size: 36px;
+}
+
+.header__phone_text {
+    font-size: 17px;
+}
+
+.page__products {
+    max-width: 900px;
+    background-color: #fff;
+    margin: auto;
+    overflow: hidden;
+}
+
+.page__spotlight_bg {
+    background-color: gray;
+    position: relative;
+}
+
+.page__spotlight_bg::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #fff 13px);
+}
+.page__spotlight_bg::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px);
+}
+
+.page__spotlight {
+    margin: auto;
+    max-width: 900px;
+    padding-top: 145px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.products__category {
+    font-family: 'Lobster';
+    font-size: 16px;
+    border: 5px double #fff;
+    margin: 25px 15px;
+    background-color: #b5e5e4;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 130px;
+    text-align: center;
+}
+
+.page__showcase {
+    margin: 25px 30px;
+    border-radius: 10px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.page__showcase_boxed {
+    padding-top: 85px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .24);
+}
+
+.page__showcase_25 {
+    background-image: url('../img/bg_header.png');
+}
+
+.page__showcase_51 {
+    background-image: url('../img/bg_showcase_51.png');
+}
+
+.page__showcase_single {
+    background-position-x: -15px;
+    background-image: url('../img/bg_showcase_single.png');
+}
+
+.showcase__title {
+    font-family: 'Lobster';
+    font-size: 34px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    background-repeat: no-repeat;
+}
+
+.showcase__title_ribbon {
+    background-image: url('../img/bg_ribbon.png');
+    position: absolute;
+    top: 15px;
+    left: -13px;    
+    background-repeat: no-repeat;
+    height: 58px;
+    width: 305px;
+    padding-left: 15px;
+}
+
+.showcase__ribbon_corner {
+    position: absolute;    
+    top: 73px;
+    left: -13px;    
+}
+
+.showcase__title_plaque {
+    background-image: url('../img/bg_plaque.png');
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 329px;
+}
+
+.showcase__preview {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fe066e;
+    height: 240px;
+    overflow: hidden;
+}
+
+.showcase__details {
+    font-family: 'PT Sans';
+    font-size: 17px;
+    border: 1px solid #ffba9f;
+    background-color: #ffedce;
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.showcase__price {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.showcase__order {
+    width: 100%;
+    background-color: #b7d4cf;
+    font-family: 'Bebas Neue Regular';
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;    
+    box-shadow: 0 2px #999;
+    margin-bottom: 10px;
+}
+
+.showcase__order_boxed {
+    color: #fff;
+    background-color: #ff625e;
+    box-shadow: none;
+}
+
+.page__palette {
+    background-image: url('../img/bg_color.png');
+    margin: 25px 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.palette__text {
+    font-family: 'Bebas Neue Regular';
+    font-size: 34px;
+}
+
+.palette__sample {
+    border: 1px dashed black;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.palette__sample_white {
+    background: linear-gradient(to bottom right, #f7f4d1, #fefefa);
+}
+
+.palette__sample_red {
+    background: linear-gradient(to bottom right, #ff9999, #ff0f0f);
+}
+
+.palette__sample_orange {
+    background: linear-gradient(to bottom right, #fff700, #ff8000);
+}
+
+.palette__sample_pink {
+    background: linear-gradient(to bottom right, #ffbde0, #ff0d9b);
+}
+
+.palette__sample_yellow {
+    background: linear-gradient(to bottom right, #fffccc, #fff111);
+}
+
+.page__about {
+    font-family: 'PT Sans';
+    font-size: 12px;
+}
+
+.page__about_title {
+    text-align: center;
+    font-family: 'Bebas Neue Regular';
+    font-size: 22px;
+}
+
+.page__about_where {
+    text-align: center;
+    font-family: 'Bebas Neue Regular';
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.page__footer {
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Bebas Neue Regular';
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.page__footer_map {
+    width: 100%;
+    border-top: 6px solid #ffbea5;
+    position: relative;
+}
+
+.page__footer_map::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #ffedce 13px);
+}
+.page__footer_map::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, #ffedce 12px, transparent 13px);
+}
+
+.page__footer_info {
+    padding-top: 15px;
+}
+
+.page__footer_bg {
+    background-color: #ffedce;
+}
+
+.page__footer_logo {
+    margin-top: 25px;
+}
+
+.page__copyright {
+    max-width: 900px;
+    margin: auto;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-size: 22px;
+}
+
+.page__copyright_bg {
+    background-color: #000000;
+    border-top: 6px solid #ff7c49;
+}
+
+.wave{
+    position: relative;
+}
+.wave::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 30px 30px;
+    background-image: radial-gradient(circle at 15px 0px, transparent 15px, gray 13px);
+}
+
+a {
+    color: #000000;
+}
