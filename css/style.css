@@ -88,6 +88,11 @@ body {
     border-radius: 50%;
     line-height: 130px;
     text-align: center;
+    outline: none;
+}
+
+.products__category:hover {
+    background-color: #86aaa9;
 }
 
 .page__showcase {
@@ -183,12 +188,21 @@ body {
     padding: 10px;    
     box-shadow: 0 2px #999;
     margin-bottom: 10px;
+    outline: none;
+}
+
+.showcase__order:hover {
+    background-color: #8a9f9b;
 }
 
 .showcase__order_boxed {
     color: #fff;
     background-color: #ff625e;
     box-shadow: none;
+}
+
+.showcase__order_boxed:hover {
+    background-color: #ba4745;
 }
 
 .page__palette {
