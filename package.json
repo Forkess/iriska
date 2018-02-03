@@ -1,0 +1,24 @@
+{
+  "name": "iriska",
+  "version": "1.0.0",
+  "description": "Our iriska build",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forkess/iriska.git"
+  },
+  "author": "Forkess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Forkess/iriska/issues"
+  },
+  "homepage": "https://github.com/Forkess/iriska#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-vue-app": "^1.3.3",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

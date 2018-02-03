@@ -15,6 +15,23 @@ Vue.component("card", {
   }
 });
 
+// TODO wrap showcase to component
+// Vue.component("showcase", {
+//   template: `<div class="showcase" :class="showcase.blockModifier" :id="showcase.htmlId">
+// 				<h2 class="title" :class="showcase.titleModifier">{{showcase.title}}</h2>
+// 				<div class="row center-xs around-xs">
+// 					<div v-for="card in cards" class="col-xs-12 col-sm-6 col-lg-3">
+// 						<card v-bind="{card, openPopup}" />
+// 					</div>
+// 				</div>
+// 			</div>`,
+//   props: {
+//     showcase: Object,
+//     cards: Array,
+//     openPopup: Function
+//   }
+// });
+
 var app = new Vue({
   el: "#app",
   data: {
@@ -25,7 +42,16 @@ var app = new Vue({
     flowersBox: [],
     flowersBasket: [],
     flowersIriska: [],
-    orderTitle: "Специальное предложение"
+    banner: {
+      title: "",
+      banner: {
+        path: "img/banner.jpg"
+      },
+      subtitle: "",
+      remark: ""
+    },
+    orderTitle: "Специальное предложение",
+    isFetched: false
   },
   methods: {
     openPopup(title) {
@@ -38,15 +64,11 @@ var app = new Vue({
     },
     setPopupTitle(title) {
       this.orderTitle = title;
-    },
-    fetchData(url) {
-      fetch(url)
-        .then(res => res.json())
-        .catch(error => console.error(error))
-        .then(res => {
-          console.log(res.entries);
-          return res.entries;
-        });
+    }
+  },
+  computed: {
+    getBannerPath() {
+      return `background-image:url(http://iriska.dubaua.ru/'+banner.banner.path+')`;
     }
   },
   mounted: function() {
@@ -56,24 +78,40 @@ var app = new Vue({
   },
   beforeMount: function() {
     this.$nextTick(function() {
-      this.fetchData(
-        "http://iriska.dubaua.ru/api/collections/get/rosesMedium?token=e39ab586a1f84b73ae4dfb0ee3193c"
-      ).then(res => (this.rosesMedium = res));
-      this.fetchData(
-        "http://iriska.dubaua.ru/api/collections/get/rosesLarge?token=e39ab586a1f84b73ae4dfb0ee3193c"
-      ).then(res => (this.rosesLarge = res));
-      this.fetchData(
-        "http://iriska.dubaua.ru/api/collections/get/flowersSingle?token=e39ab586a1f84b73ae4dfb0ee3193c"
-      ).then(res => (this.flowersSingle = res));
-      this.fetchData(
-        "http://iriska.dubaua.ru/api/collections/get/flowersBox?token=e39ab586a1f84b73ae4dfb0ee3193c"
-      ).then(res => (this.flowersBox = res));
-      this.fetchData(
-        "http://iriska.dubaua.ru/api/collections/get/flowersBasket?token=e39ab586a1f84b73ae4dfb0ee3193c"
-      ).then(res => (this.flowersBasket = res));
-      this.fetchData(
-        "http://iriska.dubaua.ru/api/collections/get/flowersIriska?token=e39ab586a1f84b73ae4dfb0ee3193c"
-      ).then(res => (this.flowersIriska = res));
+      const urls = [
+        "http://iriska.dubaua.ru/api/collections/get/rosesMedium?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "http://iriska.dubaua.ru/api/collections/get/rosesLarge?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "http://iriska.dubaua.ru/api/collections/get/flowersSingle?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "http://iriska.dubaua.ru/api/collections/get/flowersBox?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "http://iriska.dubaua.ru/api/collections/get/flowersBasket?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "http://iriska.dubaua.ru/api/collections/get/flowersIriska?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "http://iriska.dubaua.ru/api/regions/data/banner?token=e39ab586a1f84b73ae4dfb0ee3193c"
+      ];
+
+      const fetchData = url =>
+        fetch(url)
+          .then(res => res.json())
+          .then(res => res);
+
+      Promise.all(urls.map(fetchData)).then(res => {
+        const [
+          rosesMedium,
+          rosesLarge,
+          flowersSingle,
+          flowersBox,
+          flowersBasket,
+          flowersIriska,
+          banner
+        ] = res;
+        this.rosesMedium = rosesMedium.entries;
+        this.rosesLarge = rosesLarge.entries;
+        this.flowersSingle = flowersSingle.entries;
+        this.flowersBox = flowersBox.entries;
+        this.flowersBasket = flowersBasket.entries;
+        this.flowersIriska = flowersIriska.entries;
+        this.banner = banner;
+        this.isFetched = true;
+      });
     });
   }
 });

@@ -13,6 +13,11 @@
 	<link rel="stylesheet" href="css/flexboxgrid.css">
 	<link rel="stylesheet" href="fonts/bebas.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans" rel="stylesheet">
+	<style>
+		[v-cloak] {
+			display: none;
+		}
+	</style>
 </head>
 
 <body>
@@ -38,14 +43,14 @@
 				</div>
 			</div>
 		</header>
-		<section class="spotlight" style="background-image: url(img/banner.jpg)">
+		<section class="spotlight" v-if="isFetched" :style="'background-image:url(http://iriska.dubaua.ru/'+banner.banner.path+')'">
 			<div class="spotlight__content container">
 				<div class="row start-sm center-xs">
 					<div class="col-xs-12">
-						<h1 class="spotlight__title">Специальное предложение</h1>
-						<h2>только сегодня букет из 25 роз за 899 руб!</h2>
-						<button @click="openPopup('Специальное предложение')" class="button button_big">Заказать</button>
-						<p class="spotlight__remark">*ограниченное предложение, подробности уточняйте у консультанта</p>
+						<h1 class="spotlight__title">{{banner.title}}</h1>
+						<h2 v-if="banner.subtitle">{{banner.subtitle}}</h2>
+						<button @click="openPopup(banner.title)" class="button button_big">Заказать</button>
+						<p class="spotlight__remark" v-if="banner.remark">{{banner.remark}}</p>
 					</div>
 				</div>
 			</div>
@@ -201,7 +206,7 @@
 				</div>
 			</div>
 		</footer>
-		<div @click="closePopup" v-if="isPopupOpen" id="myOrder" class="order">
+		<div @click="closePopup" v-if="isPopupOpen" id="myOrder" class="order" v-cloak>
 			<div @click.stop class="order__content">
 				<div class="order__header">
 					<button @click="closePopup" class="order__close">&times;</button>
@@ -219,12 +224,12 @@
 			</div>
 		</div>
 	</div>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkBKShwFI4hODSIGn9krIkENd5u5YoTOI&language=ru&region=RU&callback=initMap"></script>
-	<script async defer src="js/init-map.js"></script>
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkBKShwFI4hODSIGn9krIkENd5u5YoTOI&language=ru&region=RU&callback=initMap"></script>
+	<script src="js/init-map.js"></script>
 	<script defer src="https://vk.com/js/api/openapi.js?151"></script>
 	<script defer src="js/init-vk.js"></script>
-	<script defer src="js/vue.js"></script>
-	<script defer src="js/app.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>
