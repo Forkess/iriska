@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <title>Доставка цветов и букетов Челябинск | Ирис Кис Кис</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,11 +10,13 @@
     <meta name="keywords" content="цветы Челябинск, букеты с доставкой Челябинск, доставка цветов Челябинск">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://vk.com/js/api/openapi.js?151" type="text/javascript"></script>
-    <script src="js/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="fonts/bebas.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans" rel="stylesheet">
 </head>
+
 <body>
-    <div class="header wave">
+    <header class="header wave">
         <div class="header__content container">
             <div class="row center-xs middle-xs">
                 <div class="col-xs-12 col-md-4">
@@ -33,19 +36,19 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="spotlight">
+    </header>
+    <section class="spotlight">
         <div class="spotlight__content container">
             <div class="row start-sm center-xs">
                 <div class="col-xs-12">
                     <h1 class="spotlight__title">Специальное предложение</h1>
                     <h2>только сегодня букет из 25 роз за 899 руб!</h2>
                     <button class="button button_big">Заказать</button>
-                    <p class="spotlight__remark">*ограниченное предложение, подробности уточняйте у консультанта</p>                    
+                    <p class="spotlight__remark">*ограниченное предложение, подробности уточняйте у консультанта</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="products">
         <div class="row center-xs">
             <a href="#bouquet_small" class="products__category">Букеты из 25 роз</a>
@@ -53,9 +56,9 @@
             <a href="#boxed_flowers" class="products__category">Цветы в коробке</a>
             <a href="#iriska_specials" class="products__category">Букеты от Ириски</a>
         </div>
-        <div class="divider"></div>
+        <hr class="divider">
         <div class="showcase showcase_boxed showcase_dotted" id="bouquet_small">
-            <div class="showcase__title showcase__title_ribbon">Букеты из 25 роз</div>
+            <h2 class="title title_ribbon">Букеты из 25 роз</h2>
             <div class="row center-xs around-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -109,7 +112,9 @@
         </div>
         <div class="palette">
             <div class="row center-xs middle-xs">
-                <div class="col-xs-12 col-lg-4"><div class="palette__text">Расцветки роз</div></div>
+                <div class="col-xs-12 col-lg-4">
+                    <div class="palette__text">Расцветки роз</div>
+                </div>
                 <div class="col-xs-12 col-lg-6">
                     <div class="row center-xs around-xs">
                         <div class="palette__sample palette__sample_white"></div>
@@ -122,7 +127,7 @@
             </div>
         </div>
         <div class="showcase showcase_boxed showcase_scottish" id="bouquet_medium">
-            <div class="showcase__title showcase__title_ribbon">Букеты из 51 розы</div>
+            <h2 class="title title_ribbon">Букеты из 51 розы</h2>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -174,9 +179,9 @@
                 </div>
             </div>
         </div>
-        <div class="divider"></div>
+        <hr class="divider">
         <div class="showcase showcase__box" id="boxed_flowers">
-            <div class="showcase__title showcase__title_plaque">Цветы в коробке</div>
+            <h2 class="title title_plaque">Цветы в коробке</h2>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -228,9 +233,9 @@
                 </div>
             </div>
         </div>
-        <div class="divider"></div>
+        <hr class="divider">
         <div class="showcase showcase__basket">
-            <div class="showcase__title showcase__title_plaque">Цветы в корзине</div>
+            <h2 class="title title_plaque">Цветы в корзине</h2>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -282,9 +287,9 @@
                 </div>
             </div>
         </div>
-        <div class="divider"></div>
+        <hr class="divider">
         <div class="showcase showcase__iriska" id="iriska_specials">
-            <div class="showcase__title showcase__title_plaque">Букеты от Ириски</div>
+            <h2 class="title title_plaque">Букеты от Ириски</h2>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -336,9 +341,9 @@
                 </div>
             </div>
         </div>
-        <div class="divider"></div>
+        <hr class="divider">
         <div class="showcase showcase_boxed showcase_striped">
-            <div class="showcase__title showcase__title_ribbon">Цветы штучно</div>
+            <h2 class="title title_ribbon">Цветы штучно</h2>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -393,22 +398,28 @@
         <div class="row start-xs">
             <div class="col-xs-10 col-xs-offset-1">
                 <div class="about">
-                    <h2 class="about__title">Доставка цветов и букетов в Челябинске</h2><br>
-                    <p>Разнообразный и богатый опыт новая модель организационной деятельности представляет собой интересный эксперимент проверки дальнейших 
-        направлений развития. Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение систем массового участия. 
-        С другой стороны укрепление и развитие структуры требуют определения и уточнения позиций, занимаемых участниками в отношении 
-        поставленных задач. Разнообразный и богатый опыт консультация с широким активом представляет собой интересный эксперимент проверки 
-        направлений прогрессивного развития. С другой стороны начало повседневной работы по формированию позиции требуют определения и 
-        уточнения дальнейших направлений развития. Равным образом рамки и место обучения кадров в значительной степени обуславливает 
-        создание модели развития.</p><br>
-                    <p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в значительной степени 
-        обуславливает создание направлений прогрессивного развития. Повседневная практика показывает, что постоянное 
-        информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании 
-        соответствующий условий активизации. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей 
-        деятельности позволяет выполнять важные задания по разработке форм развития.</p><br>
-                    <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий 
-        условий активизации. Равным образом новая модель организационной деятельности требуют определения и уточнения позиций, занимаемых 
-        участниками в отношении поставленных задач. Не следует, однако забывать, что новая модель организационной деятельности требуют от нас.</p>
+                    <h2 class="about__title">Доставка цветов и букетов в Челябинске</h2>
+                    <br>
+                    <p>Разнообразный и богатый опыт новая модель организационной деятельности представляет собой интересный
+                        эксперимент проверки дальнейших направлений развития. Разнообразный и богатый опыт консультация с
+                        широким активом позволяет оценить значение систем массового участия. С другой стороны укрепление
+                        и развитие структуры требуют определения и уточнения позиций, занимаемых участниками в отношении
+                        поставленных задач. Разнообразный и богатый опыт консультация с широким активом представляет собой
+                        интересный эксперимент проверки направлений прогрессивного развития. С другой стороны начало повседневной
+                        работы по формированию позиции требуют определения и уточнения дальнейших направлений развития. Равным
+                        образом рамки и место обучения кадров в значительной степени обуславливает создание модели развития.</p>
+                    <br>
+                    <p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в
+                        значительной степени обуславливает создание направлений прогрессивного развития. Повседневная практика
+                        показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает
+                        широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Не следует,
+                        однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет
+                        выполнять важные задания по разработке форм развития.</p>
+                    <br>
+                    <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет оценить
+                        значение соответствующий условий активизации. Равным образом новая модель организационной деятельности
+                        требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не
+                        следует, однако забывать, что новая модель организационной деятельности требуют от нас.</p>
                 </div>
             </div>
         </div>
@@ -416,18 +427,16 @@
             <h2 class="about__location">Как нас найти?</h1>
         </div>
     </section>
-    <div class="row center-xs">
-        <div class="map">
-            <div class="contacts">
-                <h2 class="contacts__title">Ирис Кис Кис</h2>
-                <p>Челябинск, Копейское ш., д.48д</p>
-                <p>+7(351) 253-67-52</p>
-                <p>sale@iriska.net</p>
-            </div>
-            <div id="gmap"></div>
+    <section class="map">
+        <div class="contacts">
+            <h2 class="contacts__title">Ирис Кис Кис</h2>
+            <p>Челябинск, Копейское ш., д.48д</p>
+            <p>+7(351) 253-67-52</p>
+            <p>sale@iriska.net</p>
         </div>
-    </div>
-    <div class="footer">
+        <div id="gmap"></div>
+    </section>
+    <footer class="footer">
         <div class="footer__content container">
             <div class="row center-xs start-md">
                 <div class="col-xs-12 col-sm-5 col-sm-offset-1">
@@ -436,11 +445,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-5">
                     <div class="footer__social">
-                        <!-- VK Widget -->
                         <div id="vk_groups"></div>
-                        <script type="text/javascript">
-                            VK.Widgets.Group("vk_groups", {mode: 3, width: "320"}, 132593240);
-                        </script>
                     </div>
                 </div>
             </div>
@@ -454,19 +459,19 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <div class="copyright__content container">
-            <div class="row center-xs between-xs">
-                <div class="col-xs-3">
-                    Копирайт 2018
-                </div>
-                <div class="col-xs-9">
-                    Интернет магазин доставки цветов в Челябинске “Ириска”
+        <div class="copyright">
+            <div class="copyright__content container">
+                <div class="row center-xs between-xs">
+                    <div class="col-xs-3">
+                        Копирайт 2018
+                    </div>
+                    <div class="col-xs-9">
+                        Интернет магазин доставки цветов в Челябинске “Ириска”
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     <div id="myOrder" class="order">
         <div class="order__content">
             <div class="order__header">
@@ -484,12 +489,10 @@
             </div>
         </div>
     </div>
-    <link rel="stylesheet" href="css/flexboxgrid.css">
-    <link rel="stylesheet" href="fonts/bebas.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans" rel="stylesheet">
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkBKShwFI4hODSIGn9krIkENd5u5YoTOI&language=ru&region=RU&callback=initMap">
-    </script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkBKShwFI4hODSIGn9krIkENd5u5YoTOI&language=ru&region=RU&callback=initMap"></script>
+    <script async defer src="js/init-map.js" type="text/javascript"></script>
+    <script defer src="https://vk.com/js/api/openapi.js?151"></script>
+    <script defer src="js/init-vk.js" type="text/javascript"></script>
 </body>
+
 </html>
