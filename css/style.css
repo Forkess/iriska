@@ -1,0 +1,610 @@
+body {
+  background-image: url("../img/bg_body.png");
+}
+
+.divider {
+  background-image: url("../img/divider.png"),
+    linear-gradient(transparent 59%, #b5e5e4 59%, transparent 62%);
+  background-position: center, center;
+  background-repeat: no-repeat, repeat;
+  height: 33px;
+  border: 0;
+  margin: 0 50px;
+}
+
+.button {
+  width: 100%;
+  background-color: #b7d4cf;
+  font-family: "Bebas Neue Regular";
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px #999;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #8a9f9b;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #a2bdb8;
+}
+
+.button_big {
+  width: auto;
+  background-color: #fe4242;
+  color: #fff;
+  font-family: "Bebas Neue Bold";
+  font-size: 52px;
+  padding: 22px 65px;
+  box-shadow: none;
+  margin-top: 20px;
+}
+
+.button_big:hover {
+  background-color: #c23333;
+}
+
+.button_big:active {
+  background-color: #e23b3b;
+}
+
+.button_secondary {
+  color: #fff;
+  background-color: #ff625e;
+  box-shadow: none;
+}
+
+.button_secondary:hover {
+  background-color: #ba4745;
+}
+
+.button_secondary:active {
+  background-color: #ce4e4c;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.header {
+  background-image: url("../img/bg_header.png");
+  position: relative;
+}
+
+.header__content {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.header__text {
+  font-family: "Bebas Neue Regular";
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.header__text_title {
+  font-size: 24px;
+}
+
+.header__phone_wrapper {
+  border: #000000 1px dashed;
+  border-radius: 10px;
+  font-family: "Bebas Neue Regular";
+  font-size: 36px;
+}
+
+.header__phone {
+  font-family: "Bebas Neue Regular";
+  font-size: 36px;
+}
+
+.header__phone_text {
+  font-size: 17px;
+}
+
+.products {
+  max-width: 900px;
+  background-color: #fff;
+  margin: auto;
+  overflow: hidden;
+}
+
+.spotlight {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.spotlight::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(
+    circle at 10px -5px,
+    transparent 12px,
+    #fff 13px
+  );
+}
+.spotlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(
+    circle at 10px 15px,
+    #fff 12px,
+    transparent 13px
+  );
+}
+
+.spotlight__content {
+  padding-top: 145px;
+  padding-bottom: 25px;
+  position: relative;
+  font-family: "Bebas Neue Book";
+  font-size: 37px;
+}
+
+.spotlight__title {
+  font-family: "Bebas Neue Bold";
+  font-size: 55px;
+}
+
+.spotlight__remark {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 110px;
+  margin-bottom: 25px;
+}
+
+.products__category:link,
+.products__category:visited {
+  font-family: "Lobster";
+  font-size: 16px;
+  border: 5px double #fff;
+  margin: 25px 15px;
+  background-color: #b5e5e4;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  line-height: 138px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.products__category:hover {
+  background-color: #86aaa9;
+}
+
+.showcase {
+  margin: 25px 30px;
+  border-radius: 10px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.showcase_boxed {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.24);
+}
+
+.showcase_dotted {
+  background-image: url("../img/bg_header.png");
+}
+
+.showcase_scottish {
+  background-image: url("../img/bg_showcase_51.png");
+}
+
+.showcase_striped {
+  background-position-x: -15px;
+  background-image: url("../img/bg_showcase_single.png");
+}
+
+.title {
+  font-family: "Lobster";
+  font-size: 34px;
+  padding: 12px 0;
+  margin: 12px 0;
+}
+
+.title_ribbon {
+  background: url("../img/bg_ribbon.png") no-repeat;
+  display: inline-block;
+  min-width: 320px;
+  margin-left: -32px;
+}
+
+.title_ribbon:before {
+  content: "";
+  position: relative;
+  top: 58px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-top: 7px solid #6e827e;
+}
+
+.title_plaque {
+  background: #ffedce;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 330px;
+  box-shadow: 0 0 0 2px #ffedce, inset 0 0 0 1px white;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  position: relative;
+}
+
+.title_plaque:before,
+.title_plaque:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.title_plaque:before {
+  left: 8px;
+}
+.title_plaque:after {
+  right: 8px;
+}
+
+.card {
+  margin-bottom: 16px;
+}
+
+.card__preview {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fe066e;
+  height: 240px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__details {
+  border: 1px solid #ffba9f;
+  background-color: #ffedce;
+  border-radius: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.card__title {
+  font-family: "PT Sans";
+  font-size: 17px;
+}
+
+.card__price {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.palette {
+  background-image: url("../img/bg_color.png");
+  margin: 25px 30px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.palette__text {
+  font-family: "Bebas Neue Regular";
+  font-size: 34px;
+}
+
+.palette__sample {
+  border: 1px dashed black;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.palette__sample_white {
+  background: linear-gradient(to bottom right, #f7f4d1, #fefefa);
+}
+
+.palette__sample_red {
+  background: linear-gradient(to bottom right, #ff9999, #ff0f0f);
+}
+
+.palette__sample_orange {
+  background: linear-gradient(to bottom right, #fff700, #ff8000);
+}
+
+.palette__sample_pink {
+  background: linear-gradient(to bottom right, #ffbde0, #ff0d9b);
+}
+
+.palette__sample_yellow {
+  background: linear-gradient(to bottom right, #fffccc, #fff111);
+}
+
+.about {
+  font-family: "PT Sans";
+  font-size: 12px;
+}
+
+.about__title {
+  text-align: center;
+  font-family: "Bebas Neue Regular";
+  font-size: 22px;
+}
+
+.about__location {
+  text-align: center;
+  font-family: "Bebas Neue Regular";
+  font-size: 36px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer__content {
+  font-family: "Bebas Neue Regular";
+  font-size: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#gmap {
+  height: 340px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.map {
+  width: 100%;
+  border-top: 6px solid #ffbea5;
+  position: relative;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: -1px;
+  right: 0;
+  background-repeat: repeat;
+  height: 8px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(
+    circle at 10px -5px,
+    transparent 12px,
+    #ffedce 13px
+  );
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  right: 0;
+  background-repeat: repeat;
+  height: 13px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(
+    circle at 10px 15px,
+    #ffedce 12px,
+    transparent 13px
+  );
+}
+
+.contacts {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 23px;
+  z-index: 1;
+  position: absolute;
+  background-color: #fff;
+  outline: #ffbfa6 solid 1px;
+  outline-offset: -5px;
+  padding: 14px;
+  right: 21%;
+  top: 75px;
+  text-align: center;
+}
+
+.contacts__title {
+  font-family: "Bebas Neue Regular";
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__info {
+  padding-top: 15px;
+}
+
+.footer {
+  background-color: #ffedce;
+}
+
+.footer__logo {
+  margin-top: 25px;
+}
+
+.copyright__content {
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "PT Sans";
+  font-style: italic;
+  font-size: 22px;
+}
+
+.copyright {
+  background-color: #000000;
+  border-top: 6px solid #ff7c49;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: -18px;
+  right: 0;
+  background-repeat: repeat;
+  height: 18px;
+  background-image: url("../img/header_border.png");
+}
+
+.footer__link {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #000000;
+}
+
+.footer__link:hover {
+  color: #ff0f0f;
+}
+
+.order {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.order__overlay {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.order__content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #ff625e;
+  border-radius: 10px;
+  max-width: 385px;
+  font-family: "Bebas Neue Regular";
+  font-size: 36px;
+  overflow: hidden;
+}
+
+.order__close {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 70px;
+  line-height: 26px;
+  border: #fefefe 2px solid;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.order__header {
+  color: #fefefe;
+  background-color: #ff625e;
+  padding: 2px 16px;
+  position: relative;
+  text-align: center;
+}
+
+.order__body {
+  padding: 15px;
+  text-align: center;
+}
+
+.order__input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  background-color: #efefef;
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-style: italic;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 10px;
+}
+
+.order__button {
+  border-radius: 5px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #ff625e;
+  font-family: "Bebas Neue Regular";
+  font-size: 36px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  outline: none;
+  margin-top: 10px;
+}
+
+.order__button:hover {
+  background-color: #c24b48;
+}
+
+.order__button:active {
+  background-color: #df5652;
+}
+
+.order__input:focus {
+  outline: none;
+  border: #ff625e 1px solid;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.preview {
+  line-height: 0;
+}
+
+.preview__image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 48em) {
+  .spotlight__content {
+    padding-left: 35px;
+  }
+  .contacts {
+    padding: 28px 50px;
+    right: 46%;
+  }
+}
