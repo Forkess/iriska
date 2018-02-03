@@ -245,6 +245,8 @@ body {
   max-width: 320px;
   box-shadow: 0 0 0 2px #ffedce, inset 0 0 0 1px white;
   text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
   position: relative;
 }
 
@@ -257,7 +259,8 @@ body {
   height: 10px;
   background: white;
   border-radius: 50%;
-  top: 24px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .title_plaque:before {
