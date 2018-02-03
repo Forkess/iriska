@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://vk.com/js/api/openapi.js?151" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="header wave">
-        <div class="header__content">
+        <div class="header__content container">
             <div class="row center-xs middle-xs">
                 <div class="col-xs-12 col-md-4">
                     <h3 class="header__text header__text_title">Интернет магазин букетов</h3>
@@ -34,12 +35,12 @@
         </div>
     </div>
     <div class="spotlight">
-        <div class="spotlight__content">
+        <div class="spotlight__content container">
             <div class="row start-sm center-xs">
                 <div class="col-xs-12">
                     <h1 class="spotlight__title">Специальное предложение</h1>
                     <h2>только сегодня букет из 25 роз за 899 руб!</h2>
-                    <button class="button button__special">Заказать</button>
+                    <button class="button button_big">Заказать</button>
                     <p class="spotlight__remark">*ограниченное предложение, подробности уточняйте у консультанта</p>                    
                 </div>
             </div>
@@ -53,12 +54,8 @@
             <a href="#iriska_specials" class="products__category">Букеты от Ириски</a>
         </div>
         <div class="divider"></div>
-        <div class="showcase showcase__boxed showcase__25" id="bouquet_small">
-            <div class="row start-xs">
-                <div class="col-xs-12">
-                    <div class="showcase__title showcase__title_ribbon">Букеты из 25 роз</div>
-                </div>
-            </div>
+        <div class="showcase showcase_boxed showcase_dotted" id="bouquet_small">
+            <div class="showcase__title showcase__title_ribbon">Букеты из 25 роз</div>
             <div class="row center-xs around-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -124,12 +121,8 @@
                 </div>
             </div>
         </div>
-        <div class="showcase showcase__boxed showcase__51" id="bouquet_medium">
-            <div class="row start-xs">
-                <div class="col-xs-12">
-                    <div class="showcase__title showcase__title_ribbon">Букеты из 51 розы</div>
-                </div>
-            </div>
+        <div class="showcase showcase_boxed showcase_scottish" id="bouquet_medium">
+            <div class="showcase__title showcase__title_ribbon">Букеты из 51 розы</div>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -183,11 +176,7 @@
         </div>
         <div class="divider"></div>
         <div class="showcase showcase__box" id="boxed_flowers">
-            <div class="row center-xs">
-                <div class="col-xs-12">
-                    <div class="showcase__title showcase__title_plaque">Цветы в коробке</div>
-                </div>
-            </div>
+            <div class="showcase__title showcase__title_plaque">Цветы в коробке</div>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -198,7 +187,7 @@
                             <div class="card__title">25 Роз Эквадор</div>
                             <div class="card__price">1 299 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -210,7 +199,7 @@
                             <div class="card__title">51 Роза Эквадор</div>
                             <div class="card__price">1 999 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -222,7 +211,7 @@
                             <div class="card__title">101 Роза Эквадор</div>
                             <div class="card__price">2 599 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -234,18 +223,14 @@
                             <div class="card__title">Любой букет</div>
                             <div class="card__price">от 599 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="divider"></div>
         <div class="showcase showcase__basket">
-            <div class="row center-xs">
-                <div class="col-xs-12">
-                    <div class="showcase__title showcase__title_plaque">Цветы в корзине</div>
-                </div>
-            </div>
+            <div class="showcase__title showcase__title_plaque">Цветы в корзине</div>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -256,7 +241,7 @@
                             <div class="card__title">Корзинка Весенняя</div>
                             <div class="card__price">1 299 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -268,7 +253,7 @@
                             <div class="card__title">Корзинка Садовая</div>
                             <div class="card__price">1 999 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -280,7 +265,7 @@
                             <div class="card__title">Корзинка Шикарная</div>
                             <div class="card__price">2 599 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -292,18 +277,14 @@
                             <div class="card__title">Корзинка Садовая New</div>
                             <div class="card__price">2 299 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="divider"></div>
         <div class="showcase showcase__iriska" id="iriska_specials">
-            <div class="row center-xs">
-                <div class="col-xs-12">
-                    <div class="showcase__title showcase__title_plaque">Букеты от Ириски</div>
-                </div>
-            </div>
+            <div class="showcase__title showcase__title_plaque">Букеты от Ириски</div>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -314,7 +295,7 @@
                             <div class="card__title">Букет Специальный</div>
                             <div class="card__price">1 299 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -326,7 +307,7 @@
                             <div class="card__title">Букет Особенный</div>
                             <div class="card__price">1 999 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -338,7 +319,7 @@
                             <div class="card__title">Букет Необычный</div>
                             <div class="card__price">2 599 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -350,18 +331,14 @@
                             <div class="card__title">Букет Универсальный</div>
                             <div class="card__price">2 299 руб.</div>
                         </div>
-                        <button class="button button__secondary">Заказать</button>
+                        <button class="button button_secondary">Заказать</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="divider"></div>
-        <div class="showcase showcase__boxed showcase__single">
-            <div class="row start-xs">
-                <div class="col-xs-12">
-                    <div class="showcase__title showcase__title_ribbon">Цветы штучно</div>
-                </div>
-            </div>
+        <div class="showcase showcase_boxed showcase_striped">
+            <div class="showcase__title showcase__title_ribbon">Цветы штучно</div>
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="card">
@@ -451,7 +428,7 @@
         </div>
     </div>
     <div class="footer">
-        <div class="footer__content">
+        <div class="footer__content container">
             <div class="row center-xs start-md">
                 <div class="col-xs-12 col-sm-5 col-sm-offset-1">
                     <h2>Цветы и букеты с доставкой в Челябинске</h2>
@@ -479,7 +456,7 @@
         </div>
     </div>
     <div class="copyright">
-        <div class="copyright__content">
+        <div class="copyright__content container">
             <div class="row center-xs between-xs">
                 <div class="col-xs-3">
                     Копирайт 2018
@@ -510,23 +487,9 @@
     <link rel="stylesheet" href="css/flexboxgrid.css">
     <link rel="stylesheet" href="fonts/bebas.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans" rel="stylesheet">
-    <script>
-        function initMap() {
-            var uluru = {lat: 55.135345, lng: 61.465941};
-            var target = {lat: 55.135422, lng: 61.464431}; 
-            var map = new google.maps.Map(document.getElementById('gmap'), {
-                zoom: 17,
-                center: target,
-                disableDefaultUI: true
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkBKShwFI4hODSIGn9krIkENd5u5YoTOI&language=ru&region=RU&callback=initMap">
     </script>
+
 </body>
 </html>

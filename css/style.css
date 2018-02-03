@@ -31,40 +31,43 @@ body {
     background-color: #a2bdb8;
 }
 
-.button__special {
-    width: 290px;
+.button_big {
+    width: auto;
     background-color: #fe4242;
     color: #fff;
     font-family: 'Bebas Neue Bold';
     font-size: 52px;
-    padding: 22px;    
+    padding: 22px 65px;
     box-shadow: none;
     margin-top: 20px;
-    outline: none;
 }
 
-.button__special:hover {
+.button_big:hover {
     background-color: #c23333;
 }
 
-.button__special:active {
+.button_big:active {
     background-color: #e23b3b;
 }
 
-.button__secondary {
+.button_secondary {
     color: #fff;
     background-color: #ff625e;
     box-shadow: none;
 }
 
-.button__secondary:hover {
+.button_secondary:hover {
     background-color: #ba4745;
 }
 
-.button__secondary:active {
+.button_secondary:active {
     background-color: #ce4e4c;
 }
 
+.container {
+    margin: auto;
+    max-width: 900px;
+}
 
 .header {
     background-image: url('../img/bg_header.png');
@@ -72,8 +75,6 @@ body {
 }
 
 .header__content {
-    margin: auto;
-    max-width: 900px;
     padding-top: 25px;
     padding-bottom: 35px;
 }
@@ -140,8 +141,6 @@ body {
 }
 
 .spotlight__content {
-    margin: auto;
-    max-width: 900px;
     padding-top: 145px;
     padding-bottom: 25px;
     position: relative;
@@ -187,20 +186,20 @@ body {
     position: relative;
 }
 
-.showcase__boxed {
+.showcase_boxed {
     padding-top: 85px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .24);
 }
 
-.showcase__25 {
+.showcase_dotted {
     background-image: url('../img/bg_header.png');
 }
 
-.showcase__51 {
+.showcase_scottish {
     background-image: url('../img/bg_showcase_51.png');
 }
 
-.showcase__single {
+.showcase_striped {
     background-position-x: -15px;
     background-image: url('../img/bg_showcase_single.png');
 }
@@ -221,14 +220,12 @@ body {
     background-repeat: no-repeat;
     height: 58px;
     width: 305px;
-    padding-left: 15px;
 }
 
 .showcase__title_ribbon::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 58px;
-    left: 0;
     width: 0; 
     height: 0; 
     border-left: 13px solid transparent;
@@ -237,10 +234,9 @@ body {
 
 .showcase__title_plaque {
     background-image: url('../img/bg_plaque.png');
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 10px;
-    width: 100%;
+    max-width: 100%;
+    text-align: center;
     background-position: center;
 }
 
@@ -335,8 +331,6 @@ body {
 }
 
 .footer__content {
-    max-width: 900px;
-    margin: auto;
     font-family: 'Bebas Neue Regular';
     font-size: 24px;
     padding-top: 15px;
@@ -418,8 +412,6 @@ body {
 }
 
 .copyright__content {
-    max-width: 900px;
-    margin: auto;
     color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
