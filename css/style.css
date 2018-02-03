@@ -151,7 +151,6 @@ body {
     transparent 13px
   );
 }
-
 .spotlight__content {
   padding-top: 145px;
   padding-bottom: 25px;
@@ -159,12 +158,10 @@ body {
   font-family: "Bebas Neue Book";
   font-size: 37px;
 }
-
 .spotlight__title {
   font-family: "Bebas Neue Bold";
   font-size: 55px;
 }
-
 .spotlight__remark {
   font-family: "PT Sans";
   font-size: 14px;
@@ -172,7 +169,6 @@ body {
   margin-top: 110px;
   margin-bottom: 25px;
 }
-
 .products__category:link,
 .products__category:visited {
   font-family: "Lobster";
@@ -187,49 +183,40 @@ body {
   text-decoration: none;
   color: #000000;
 }
-
 .products__category:hover {
   background-color: #86aaa9;
 }
-
 .showcase {
   margin: 25px 30px;
   border-radius: 10px;
   padding: 0 20px;
   position: relative;
 }
-
 .showcase_boxed {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.24);
 }
-
 .showcase_dotted {
   background-image: url("../img/bg_header.png");
 }
-
 .showcase_scottish {
   background-image: url("../img/bg_showcase_51.png");
 }
-
 .showcase_striped {
   background-position-x: -15px;
   background-image: url("../img/bg_showcase_single.png");
 }
-
 .title {
   font-family: "Lobster";
   font-size: 34px;
   padding: 12px 0;
   margin: 12px 0;
 }
-
 .title_ribbon {
   background: url("../img/bg_ribbon.png") no-repeat;
   display: inline-block;
   min-width: 320px;
   margin-left: -32px;
 }
-
 .title_ribbon:before {
   content: "";
   position: relative;
@@ -239,7 +226,6 @@ body {
   border-left: 13px solid transparent;
   border-top: 7px solid #6e827e;
 }
-
 .title_plaque {
   background: #ffedce;
   margin-left: auto;
@@ -251,7 +237,6 @@ body {
   padding-right: 28px;
   position: relative;
 }
-
 .title_plaque:before,
 .title_plaque:after {
   content: "";
@@ -264,18 +249,15 @@ body {
   top: 50%;
   transform: translate(0, -50%);
 }
-
 .title_plaque:before {
   left: 8px;
 }
 .title_plaque:after {
   right: 8px;
 }
-
 .card {
   margin-bottom: 16px;
 }
-
 .card__preview {
   background-color: #fff;
   border-radius: 10px;
@@ -286,7 +268,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .card__details {
   border: 1px solid #ffba9f;
   background-color: #ffedce;
@@ -296,68 +277,55 @@ body {
   padding-top: 7px;
   padding-bottom: 7px;
 }
-
 .card__title {
   font-family: "PT Sans";
   font-size: 17px;
 }
-
 .card__price {
   font-family: "PT Sans";
   font-weight: bold;
   font-size: 22px;
 }
-
 .palette {
   background-image: url("../img/bg_color.png");
   margin: 25px 30px;
   border-radius: 10px;
   padding: 5px;
 }
-
 .palette__text {
   font-family: "Bebas Neue Regular";
   font-size: 34px;
 }
-
 .palette__sample {
   border: 1px dashed black;
   width: 55px;
   height: 55px;
   border-radius: 10px;
 }
-
 .palette__sample_white {
   background: linear-gradient(to bottom right, #f7f4d1, #fefefa);
 }
-
 .palette__sample_red {
   background: linear-gradient(to bottom right, #ff9999, #ff0f0f);
 }
-
 .palette__sample_orange {
   background: linear-gradient(to bottom right, #fff700, #ff8000);
 }
-
 .palette__sample_pink {
   background: linear-gradient(to bottom right, #ffbde0, #ff0d9b);
 }
-
 .palette__sample_yellow {
   background: linear-gradient(to bottom right, #fffccc, #fff111);
 }
-
 .about {
   font-family: "PT Sans";
   font-size: 12px;
 }
-
 .about__title {
   text-align: center;
   font-family: "Bebas Neue Regular";
   font-size: 22px;
 }
-
 .about__location {
   text-align: center;
   font-family: "Bebas Neue Regular";
@@ -365,26 +333,22 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 .footer__content {
   font-family: "Bebas Neue Regular";
   font-size: 24px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 #gmap {
   height: 340px;
   width: 100%;
   padding-bottom: 5px;
 }
-
 .map {
   width: 100%;
   border-top: 6px solid #ffbea5;
   position: relative;
 }
-
 .map::before {
   content: "";
   position: absolute;
@@ -401,7 +365,6 @@ body {
     #ffedce 13px
   );
 }
-
 .map::after {
   content: "";
   position: absolute;
@@ -417,7 +380,6 @@ body {
     transparent 13px
   );
 }
-
 .contacts {
   font-family: "PT Sans";
   font-size: 18px;
@@ -432,30 +394,24 @@ body {
   top: 75px;
   text-align: center;
 }
-
 .contacts__title {
   font-family: "Bebas Neue Regular";
   font-size: 36px;
   line-height: 40px;
 }
-
 .footer__social {
   display: flex;
   justify-content: center;
 }
-
 .footer__info {
   padding-top: 15px;
 }
-
 .footer {
   background-color: #ffedce;
 }
-
 .footer__logo {
   margin-top: 25px;
 }
-
 .copyright__content {
   color: #fff;
   padding-top: 10px;
@@ -464,12 +420,10 @@ body {
   font-style: italic;
   font-size: 22px;
 }
-
 .copyright {
   background-color: #000000;
   border-top: 6px solid #ff7c49;
 }
-
 .header::before {
   content: "";
   position: absolute;
@@ -481,35 +435,26 @@ body {
   height: 18px;
   background-image: url("../img/header_border.png");
 }
-
 .footer__link {
   margin-right: 5px;
   margin-left: 5px;
   color: #000000;
 }
-
 .footer__link:hover {
   color: #ff0f0f;
 }
-
 .order {
-  display: none;
   position: fixed;
   z-index: 1;
+  display: flex;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
-
-.order__overlay {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
 .order__content {
   background-color: #fefefe;
   margin: auto;
@@ -519,19 +464,28 @@ body {
   font-family: "Bebas Neue Regular";
   font-size: 36px;
   overflow: hidden;
+  cursor: default;
 }
-
+.order__close:focus {
+  outline: none;
+}
+.order__close:hover {
+  color: #000000;
+  border: #000000 2px solid;
+}
 .order__close {
   position: absolute;
   top: 1px;
   right: 1px;
-  font-size: 70px;
+  font-size: 46px;
   line-height: 26px;
+  color: #fefefe;
+  background-color: #ff625e;
   border: #fefefe 2px solid;
   border-radius: 50%;
   padding: 3px;
+  cursor: pointer;
 }
-
 .order__header {
   color: #fefefe;
   background-color: #ff625e;
@@ -539,12 +493,10 @@ body {
   position: relative;
   text-align: center;
 }
-
 .order__body {
   padding: 15px;
   text-align: center;
 }
-
 .order__input {
   width: 100%;
   padding: 12px 20px;
@@ -557,7 +509,6 @@ body {
   border: none;
   margin-top: 10px;
 }
-
 .order__button {
   border-radius: 5px;
   width: 100%;
@@ -571,34 +522,27 @@ body {
   outline: none;
   margin-top: 10px;
 }
-
 .order__button:hover {
   background-color: #c24b48;
 }
-
 .order__button:active {
   background-color: #df5652;
 }
-
 .order__input:focus {
   outline: none;
   border: #ff625e 1px solid;
 }
-
 textarea {
   height: 100px;
   resize: none;
 }
-
 .preview {
   line-height: 0;
 }
-
 .preview__image {
   max-width: 100%;
   height: auto;
 }
-
 @media only screen and (min-width: 48em) {
   .spotlight__content {
     padding-left: 35px;
