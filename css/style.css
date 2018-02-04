@@ -303,9 +303,10 @@ body {
   font-size: 34px;
 }
 .palette__sample {
+  padding: 25px;
   border: 1px dashed black;
-  width: 55px;
-  height: 55px;
+  max-width: 55px;
+  max-height: 55px;
   border-radius: 10px;
 }
 .palette__sample_white {
