@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="spotlight" v-if="isFetched" :style="'background-image:url(http://iriska.dubaua.ru/'+banner.banner.path+')'">
+		<section class="spotlight" v-if="isFetched" :style="'background-image:url(https://api.iriska.net/'+banner.banner.path+')'">
 			<div class="spotlight__content container">
 				<div class="row start-sm center-xs">
 					<div class="col-xs-12">
@@ -65,7 +65,7 @@
 			<hr class="divider">
 			<div class="showcase showcase_boxed showcase_dotted" id="bouquet_small">
 				<h2 class="title title_ribbon">Букеты из 25 роз</h2>
-				<div class="row center-xs around-xs">
+				<div class="row around-xs">
 					<div v-for="card in rosesMedium" class="col-xs-12 col-sm-6 col-lg-3">
 						<card v-bind="{card, openPopup}" />
 					</div>
@@ -89,7 +89,7 @@
 			</div>
 			<div class="showcase showcase_boxed showcase_scottish" id="bouquet_medium">
 				<h2 class="title title_ribbon">Букеты из 51 розы</h2>
-				<div class="row center-xs">
+				<div class="row">
 					<div v-for="card in rosesLarge" class="col-xs-12 col-sm-6 col-lg-3">
 						<card v-bind="{card, openPopup}" />
 					</div>
@@ -98,7 +98,7 @@
 			<hr class="divider">
 			<div class="showcase showcase__box" id="boxed_flowers">
 				<h2 class="title title_plaque">Цветы в коробке</h2>
-				<div class="row center-xs">
+				<div class="row">
 					<div v-for="card in flowersSingle" class="col-xs-12 col-sm-6 col-lg-3">
 						<card v-bind="{card, openPopup}" />
 					</div>
@@ -107,7 +107,7 @@
 			<hr class="divider">
 			<div class="showcase showcase__basket">
 				<h2 class="title title_plaque">Цветы в корзине</h2>
-				<div class="row center-xs">
+				<div class="row">
 					<div v-for="card in flowersBox" class="col-xs-12 col-sm-6 col-lg-3">
 						<card v-bind="{card, openPopup}" />
 					</div>
@@ -116,7 +116,7 @@
 			<hr class="divider">
 			<div class="showcase showcase__iriska" id="iriska_specials">
 				<h2 class="title title_plaque">Букеты от Ириски</h2>
-				<div class="row center-xs">
+				<div class="row">
 					<div v-for="card in flowersBasket" class="col-xs-12 col-sm-6 col-lg-3">
 						<card v-bind="{card, openPopup}" />
 					</div>
@@ -125,7 +125,7 @@
 			<hr class="divider">
 			<div class="showcase showcase_boxed showcase_striped">
 				<h2 class="title title_ribbon">Цветы штучно</h2>
-				<div class="row center-xs">
+				<div class="row">
 					<div v-for="card in flowersIriska" class="col-xs-12 col-sm-6 col-lg-3">
 						<card v-bind="{card, openPopup}" />
 					</div>
@@ -209,7 +209,11 @@
 		<div @click="closePopup" v-if="isPopupOpen" id="myOrder" class="order" v-cloak>
 			<div @click.stop class="order__content">
 				<div class="order__header">
-					<button @click="closePopup" class="order__close">&times;</button>
+					<button @click="closePopup" class="order__close">
+						<svg class="order__icon" viewbox="0 0 40 40">
+							<path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+						</svg>
+					</button>
 					<h2>Заказать звонок</h2>
 				</div>
 				<div class="order__body">

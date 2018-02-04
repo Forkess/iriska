@@ -1,7 +1,7 @@
 Vue.component("card", {
   template: `<div class="card">
 							<div class="card__preview preview">
-								<img class="preview__image" :src="'http://iriska.dubaua.ru/'+card.image.path">
+								<img class="preview__image" :src="'https://api.iriska.net/'+card.image.path">
 							</div>
 							<div class="card__details">
 								<div class="card__title">{{card.title}}</div>
@@ -68,7 +68,7 @@ var app = new Vue({
   },
   computed: {
     getBannerPath() {
-      return `background-image:url(http://iriska.dubaua.ru/'+banner.banner.path+')`;
+      return `background-image:url(https://api.iriska.net/'+banner.banner.path+')`;
     }
   },
   mounted: function() {
@@ -79,13 +79,13 @@ var app = new Vue({
   beforeMount: function() {
     this.$nextTick(function() {
       const urls = [
-        "http://iriska.dubaua.ru/api/collections/get/rosesMedium?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "http://iriska.dubaua.ru/api/collections/get/rosesLarge?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "http://iriska.dubaua.ru/api/collections/get/flowersSingle?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "http://iriska.dubaua.ru/api/collections/get/flowersBox?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "http://iriska.dubaua.ru/api/collections/get/flowersBasket?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "http://iriska.dubaua.ru/api/collections/get/flowersIriska?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "http://iriska.dubaua.ru/api/regions/data/banner?token=e39ab586a1f84b73ae4dfb0ee3193c"
+        "https://api.iriska.net/api/collections/get/rosesMedium?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "https://api.iriska.net/api/collections/get/rosesLarge?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "https://api.iriska.net/api/collections/get/flowersSingle?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "https://api.iriska.net/api/collections/get/flowersBox?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "https://api.iriska.net/api/collections/get/flowersBasket?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "https://api.iriska.net/api/collections/get/flowersIriska?token=e39ab586a1f84b73ae4dfb0ee3193c",
+        "https://api.iriska.net/api/regions/data/banner?token=e39ab586a1f84b73ae4dfb0ee3193c"
       ];
 
       const fetchData = url =>
