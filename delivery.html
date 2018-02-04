@@ -45,98 +45,11 @@
 				</div>
 			</div>
 		</header>
-		<section class="spotlight" v-if="isFetched" :style="'background-image:url(https://api.iriska.net/'+banner.banner.path+')'">
-			<div class="spotlight__content container">
-				<div class="row start-sm center-xs">
-					<div class="col-xs-12">
-						<h2 class="spotlight__title">{{banner.title}}</h1>
-							<h2 v-if="banner.subtitle">{{banner.subtitle}}</h2>
-							<button @click="openPopup(banner.title)" class="button button_big">Заказать</button>
-							<p class="spotlight__remark" v-if="banner.remark">{{banner.remark}}</p>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section class="products">
-			<div class="row center-xs">
-				<a href="#bouquet_small" class="products__category">Букеты из 25 роз</a>
-				<a href="#bouquet_medium" class="products__category">Букеты из 51 розы</a>
-				<a href="#boxed_flowers" class="products__category">Цветы в коробке</a>
-				<a href="#iriska_specials" class="products__category">Букеты от Ириски</a>
-			</div>
-			<hr class="divider">
-			<div class="showcase showcase_boxed showcase_dotted" id="bouquet_small">
-				<h2 class="title title_ribbon">Букеты из 25 роз</h2>
-				<div class="row around-xs">
-					<div v-for="card in rosesMedium" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
-					</div>
-				</div>
-			</div>
-			<div class="palette">
-				<div class="row center-xs middle-xs">
-					<div class="col-xs-12 col-lg-4">
-						<div class="palette__text">Расцветки роз</div>
-					</div>
-					<div class="col-xs-12 col-lg-6">
-						<div class="row center-xs around-xs">
-							<div class="palette__sample palette__sample_white"></div>
-							<div class="palette__sample palette__sample_red"></div>
-							<div class="palette__sample palette__sample_orange"></div>
-							<div class="palette__sample palette__sample_pink"></div>
-							<div class="palette__sample palette__sample_yellow"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="showcase showcase_boxed showcase_scottish" id="bouquet_medium">
-				<h2 class="title title_ribbon">Букеты из 51 розы</h2>
-				<div class="row">
-					<div v-for="card in rosesLarge" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
-					</div>
-				</div>
-			</div>
-			<hr class="divider">
-			<div class="showcase showcase__box" id="boxed_flowers">
-				<h2 class="title title_plaque">Цветы в коробке</h2>
-				<div class="row">
-					<div v-for="card in flowersSingle" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
-					</div>
-				</div>
-			</div>
-			<hr class="divider">
-			<div class="showcase showcase__basket">
-				<h2 class="title title_plaque">Цветы в корзине</h2>
-				<div class="row">
-					<div v-for="card in flowersBox" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
-					</div>
-				</div>
-			</div>
-			<hr class="divider">
-			<div class="showcase showcase__iriska" id="iriska_specials">
-				<h2 class="title title_plaque">Букеты от Ириски</h2>
-				<div class="row">
-					<div v-for="card in flowersBasket" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
-					</div>
-				</div>
-			</div>
-			<hr class="divider">
-			<div class="showcase showcase_boxed showcase_striped">
-				<h2 class="title title_ribbon">Цветы штучно</h2>
-				<div class="row">
-					<div v-for="card in flowersIriska" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
-					</div>
-				</div>
-			</div>
 			<div class="row start-xs">
 				<div class="col-xs-10 col-xs-offset-1">
-					<div class="about">
-						<h2 class="about__title">Доставка цветов и букетов в Челябинске</h2>
+					<div class="about about_separate">
+						<h1 class="about__title about__title_separate">Доставка и условия возврата</h1>
 						<br>
 						<p>Разнообразный и богатый опыт новая модель организационной деятельности представляет собой интересный эксперимент проверки
 							дальнейших направлений развития. Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение
@@ -159,9 +72,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="row center-xs">
-				<h2 class="about__location">Как нас найти?</h1>
-			</div>
 		</section>
 		<section class="map">
 			<div class="contacts">
@@ -176,7 +86,7 @@
 			<div class="footer__content container">
 				<div class="row center-xs start-md">
 					<div class="col-xs-12 col-sm-5 col-sm-offset-1">
-						<h1>Цветы и букеты с доставкой в Челябинске</h1>
+						<h2>Цветы и букеты с доставкой в Челябинске</h2>
 						<a href="index.html">
 							<img class="footer__logo" src="img/logo.png" alt="Ирис Кис Кис">
 						</a>
@@ -210,21 +120,6 @@
 				</div>
 			</div>
 		</footer>
-		<div @click="closePopup" v-if="isPopupOpen" id="myOrder" class="order" v-cloak>
-			<div @click.stop class="order__content">
-				<div class="order__header">
-					<button @click="closePopup" class="order__close">
-						<svg class="order__icon" viewbox="0 0 40 40">
-							<path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
-						</svg>
-					</button>
-					<h2>Заказать звонок</h2>
-				</div>
-				<div class="order__body">
-					<privacy-form :form="contact_us" :title="orderTitle" />
-				</div>
-			</div>
-		</div>
 	</div>
 	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkBKShwFI4hODSIGn9krIkENd5u5YoTOI&language=ru&region=RU&callback=initMap"></script>
 	<script src="js/init-map.js"></script>
