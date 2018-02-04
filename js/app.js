@@ -51,7 +51,75 @@ var app = new Vue({
       remark: ""
     },
     orderTitle: "Специальное предложение",
-    isFetched: false
+    isFetched: false,
+    contact_us: {
+      // privacy
+      isAgree: false,
+      privacy_details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maxime est nihil, a dolorem suscipit excepturi non blanditiis libero, ipsa tenetur.",
+      privacy_link: "/ru/o-kompanii/polzovatelskoe-soglashenie",
+      privacy_pretext: "Я согласен с условиями",
+      privacy_link_text: "пользовательского соглашения",
+      privacy_posttext: "",
+      // misc
+      button_text: "Отправить",
+      subject: "Пробная отправка компонента формы",
+      isSent: false,
+      success_message: "Ваше сообщение доставлено.",
+      url: "/process.php",
+      // model, scheme
+      model: {
+        name: "",
+        phone: "",
+        text: ""
+      },
+      schema: {
+        fields: [
+          {
+            type: "input",
+            inputType: "text",
+            id: "name",
+            label: "Имя",
+            model: "name",
+            readonly: false,
+            required: true,
+            disabled: false,
+            placeholder: "Ваше имя",
+            validator: VueFormGenerator.validators.string,
+            styleClasses: "form__field"
+          },
+          {
+            type: "input",
+            inputType: "text",
+            id: "phone",
+            label: "Телефон",
+            model: "phone",
+            readonly: false,
+            required: true,
+            disabled: false,
+            placeholder: "Телефон",
+            validator: VueFormGenerator.validators.string,
+            styleClasses: "form__field"
+          },
+          {
+            type: "textArea",
+            inputType: "textArea",
+            id: "text",
+            label: "Комментарий к заказу",
+            model: "text",
+            readonly: false,
+            required: true,
+            disabled: false,
+            placeholder: "Комментарий к заказу",
+            validator: VueFormGenerator.validators.string,
+            styleClasses: "form__field"
+          }
+        ]
+      },
+      formOptions: {
+        validateAfterChanged: true
+      }
+    }
   },
   methods: {
     openPopup(title) {

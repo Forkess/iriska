@@ -217,13 +217,7 @@
 					<h2>Заказать звонок</h2>
 				</div>
 				<div class="order__body">
-					<form @submit.prevent>
-						<h2>{{orderTitle}}</h2>
-						<input class="order__input" type="text" id="name" name="username" placeholder="Имя">
-						<input class="order__input" type="text" id="phone" name="phone_number" placeholder="+7 (XXX) XXX-XX-XX">
-						<textarea class="order__input" id="comment" placeholder="Комментарий к заказу"></textarea>
-						<input class="order__button" type="submit" value="Отправить">
-					</form>
+					<privacy-form :form="contact_us" :title="orderTitle" />
 				</div>
 			</div>
 		</div>
@@ -232,7 +226,9 @@
 	<script src="js/init-map.js"></script>
 	<script defer src="https://vk.com/js/api/openapi.js?151"></script>
 	<script defer src="js/init-vk.js"></script>
+	<script src="js/vue-form-generator.js"></script>
 	<script src="js/vue.js"></script>
+	<script src="js/privacy-form.js"></script>
 	<script src="js/app.js"></script>
 </body>
 
