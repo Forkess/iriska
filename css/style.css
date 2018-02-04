@@ -328,12 +328,16 @@ body {
   font-size: 12px;
 }
 .about_separate {
-  padding: 25px;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 .about__title {
   text-align: center;
   font-family: "Bebas Neue Regular";
   font-size: 22px;
+}
+.about__title_separate {
+  font-size: 36px;
 }
 .about__location {
   text-align: center;
