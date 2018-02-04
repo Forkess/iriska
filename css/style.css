@@ -327,6 +327,9 @@ body {
   font-family: "PT Sans";
   font-size: 12px;
 }
+.about_separate {
+  padding: 25px;
+}
 .about__title {
   text-align: center;
   font-family: "Bebas Neue Regular";
@@ -512,7 +515,7 @@ body {
   padding: 15px;
   text-align: center;
 }
-.order__input {
+.form-control {
   width: 100%;
   padding: 12px 20px;
   border-radius: 5px;
@@ -524,7 +527,7 @@ body {
   border: none;
   margin-top: 10px;
 }
-.order__button {
+.button_stroke {
   border-radius: 5px;
   width: 100%;
   color: #ffffff;
@@ -537,19 +540,34 @@ body {
   outline: none;
   margin-top: 10px;
 }
-.order__button:hover {
+.button_stroke:hover {
   background-color: #c24b48;
 }
-.order__button:active {
+.button_stroke:active {
   background-color: #df5652;
 }
-.order__input:focus {
+.form-control:focus {
   outline: none;
   border: #ff625e 1px solid;
 }
 textarea {
   height: 100px;
   resize: none;
+}
+.help-block {
+  font-size: 24px;
+}
+.form__field label {
+  display: none;
+}
+.privacy__agree label {
+  font-size: 24px;
+}
+.privacy__agree label a {
+  color: #000000;
+}
+.privacy__agree label a:hover {
+  color: #ff0f0f;
 }
 .preview {
   line-height: 0;

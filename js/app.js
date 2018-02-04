@@ -57,7 +57,7 @@ var app = new Vue({
       isAgree: false,
       privacy_details:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maxime est nihil, a dolorem suscipit excepturi non blanditiis libero, ipsa tenetur.",
-      privacy_link: "/ru/o-kompanii/polzovatelskoe-soglashenie",
+      privacy_link: "agreement.html",
       privacy_pretext: "Я согласен с условиями",
       privacy_link_text: "пользовательского соглашения",
       privacy_posttext: "",
