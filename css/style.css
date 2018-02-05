@@ -577,6 +577,18 @@ textarea {
 .preview {
   line-height: 0;
 }
+.preview_full {
+  margin: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+}
 .preview__image {
   max-width: 100%;
   height: auto;

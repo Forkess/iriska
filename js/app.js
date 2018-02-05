@@ -1,7 +1,7 @@
 Vue.component("card", {
   template: `<div class="card">
 							<div class="card__preview preview">
-								<img class="preview__image" :src="'https://api.iriska.net/'+card.image.path">
+								<img @click="openPreview(card.image.path)" class="preview__image" :src="'https://api.iriska.net/'+card.image.path">
 							</div>
 							<div class="card__details">
 								<div class="card__title">{{card.title}}</div>
@@ -11,7 +11,8 @@ Vue.component("card", {
             </div>`,
   props: {
     card: Object,
-    openPopup: Function
+    openPopup: Function,
+    openPreview: Function
   }
 });
 
@@ -36,6 +37,7 @@ var app = new Vue({
   el: "#app",
   data: {
     isPopupOpen: false,
+    isPreviewOpen: false,
     rosesMedium: [],
     rosesLarge: [],
     flowersSingle: [],
@@ -51,6 +53,7 @@ var app = new Vue({
       remark: ""
     },
     orderTitle: "Специальное предложение",
+    previewUrl: "",
     isFetched: false,
     contact_us: {
       // privacy
@@ -130,8 +133,19 @@ var app = new Vue({
       this.isPopupOpen = false;
       this.setPopupTitle("Специальное предложение");
     },
+    openPreview(url) {
+      this.isPreviewOpen = true;
+      this.setPreviewUrl(url);
+    },
+    closePreview() {
+      this.isPreviewOpen = false;
+      this.setPreviewUrl("");
+    },
     setPopupTitle(title) {
       this.orderTitle = title;
+    },
+    setPreviewUrl(url) {
+      this.previewUrl = url;
     }
   },
   computed: {
