@@ -69,7 +69,7 @@
 				<h2 class="title title_ribbon">Букеты из 25 роз</h2>
 				<div class="row around-xs">
 					<div v-for="card in rosesMedium" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
+						<card v-bind="{card, openPopup, openPreview}" />
 					</div>
 				</div>
 			</div>
@@ -93,7 +93,7 @@
 				<h2 class="title title_ribbon">Букеты из 51 розы</h2>
 				<div class="row">
 					<div v-for="card in rosesLarge" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
+						<card v-bind="{card, openPopup, openPreview}" />
 					</div>
 				</div>
 			</div>
@@ -102,7 +102,7 @@
 				<h2 class="title title_plaque">Цветы в коробке</h2>
 				<div class="row">
 					<div v-for="card in flowersBox" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
+						<card v-bind="{card, openPopup, openPreview}" />
 					</div>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 				<h2 class="title title_plaque">Цветы в корзине</h2>
 				<div class="row">
 					<div v-for="card in flowersBasket" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
+						<card v-bind="{card, openPopup, openPreview}" />
 					</div>
 				</div>
 			</div>
@@ -120,7 +120,7 @@
 				<h2 class="title title_plaque">Букеты от Ириски</h2>
 				<div class="row">
 					<div v-for="card in flowersIriska" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
+						<card v-bind="{card, openPopup, openPreview}" />
 					</div>
 				</div>
 			</div>
@@ -129,7 +129,7 @@
 				<h2 class="title title_ribbon">Цветы штучно</h2>
 				<div class="row">
 					<div v-for="card in flowersSingle" class="col-xs-12 col-sm-6 col-lg-3">
-						<card v-bind="{card, openPopup}" />
+						<card v-bind="{card, openPopup, openPreview}" />
 					</div>
 				</div>
 			</div>
@@ -223,6 +223,16 @@
 				<div class="order__body">
 					<privacy-form :form="contact_us" :title="orderTitle" />
 				</div>
+			</div>
+		</div>
+		<div @click="closePreview" v-if="isPreviewOpen" id="imgPreview" class="order" v-cloak>
+			<div @click.stop>
+				<button @click="closePreview" class="order__close">
+					<svg class="order__icon" viewbox="0 0 40 40">
+						<path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+					</svg>
+				</button>
+				<img class="preview preview_full" :src="'https://api.iriska.net/'+previewUrl">
 			</div>
 		</div>
 	</div>
