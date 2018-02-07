@@ -161,13 +161,13 @@ var app = new Vue({
   beforeMount: function() {
     this.$nextTick(function() {
       const urls = [
-        "https://api.iriska.net/api/collections/get/rosesMedium?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "https://api.iriska.net/api/collections/get/rosesLarge?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "https://api.iriska.net/api/collections/get/flowersSingle?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "https://api.iriska.net/api/collections/get/flowersBox?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "https://api.iriska.net/api/collections/get/flowersBasket?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "https://api.iriska.net/api/collections/get/flowersIriska?token=e39ab586a1f84b73ae4dfb0ee3193c",
-        "https://api.iriska.net/api/regions/data/banner?token=e39ab586a1f84b73ae4dfb0ee3193c"
+        "https://api.iriska.net/api/collections/get/rosesMedium?token=c825ea67579bdb0ea7e9f0507ce6d8",
+        "https://api.iriska.net/api/collections/get/rosesLarge?token=c825ea67579bdb0ea7e9f0507ce6d8",
+        "https://api.iriska.net/api/collections/get/flowersSingle?token=c825ea67579bdb0ea7e9f0507ce6d8",
+        "https://api.iriska.net/api/collections/get/flowersBox?token=c825ea67579bdb0ea7e9f0507ce6d8",
+        "https://api.iriska.net/api/collections/get/flowersBasket?token=c825ea67579bdb0ea7e9f0507ce6d8",
+        "https://api.iriska.net/api/collections/get/flowersIriska?token=c825ea67579bdb0ea7e9f0507ce6d8",
+        "https://api.iriska.net/api/regions/data/banner?token=c825ea67579bdb0ea7e9f0507ce6d8"
       ];
 
       const fetchData = url =>

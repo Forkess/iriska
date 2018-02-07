@@ -593,6 +593,16 @@ textarea {
   max-width: 100%;
   height: auto;
 }
+.viber {
+  position: fixed;
+  right: 5px;
+  bottom: 15%;
+  z-index: 9999;
+}
+.viber__icon {
+  width: 100px;
+  height: 100px;
+}
 @media only screen and (min-width: 48em) {
   .spotlight__content {
     padding-left: 35px;
@@ -600,5 +610,8 @@ textarea {
   .contacts {
     padding: 28px 50px;
     right: 46%;
+  }
+  .viber {
+    bottom: 45%;
   }
 }
