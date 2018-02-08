@@ -459,7 +459,7 @@ body {
 }
 .order {
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   display: flex;
   left: 0;
   top: 0;
@@ -597,7 +597,7 @@ textarea {
   position: fixed;
   right: 5px;
   bottom: 15%;
-  z-index: 9999;
+  z-index: 1000;
 }
 .viber__icon {
   width: 100px;
